@@ -13,7 +13,50 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="header"></div>
+    <!-- Use a mix of flex and grid here if it helps-->
+    <div class="header">
+      <div class="search">
+        <img src="./images/magnify.svg" class="searchImg" />
+        <input type="search" />
+      </div>
+
+      <!--Top right content of header grid. Notification bell, avatar and name-->
+      <div class="topRight">
+        <img
+          src="./images/bell.svg"
+          alt="notification bell icon"
+          class="icon"
+        />
+
+        <img
+          src="./images/profiles/profilepictureone.jpg"
+          alt="user's profile pic"
+          class="profileImg"
+        />
+        <div class="profileName">Michael Abel</div>
+      </div>
+      <!--Bottom left content of header grid. Avatar, greeting and name-->
+      <div class="bottomLeft">
+        <img
+          src="./images/profiles/profilepictureone.jpg"
+          src="./images/profiles/profilepictureone.jpg"
+          alt="user's profile pic"
+          class="profileImgBigegr"
+        />
+        <div class="bottomLeftTxt">
+          Hi there,<br />
+          <span>Michael Abel (@mikeAbe)</span>
+        </div>
+      </div>
+
+      <!--Bottom right of header grid. New, upload and share buttons-->
+      <div class="bottomRight">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+
     <div class="sidebar">
       <!--Logo and text-->
       <img
