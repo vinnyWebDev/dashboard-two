@@ -32,8 +32,14 @@ body {
 
 .main {
   background-color: rgb(210, 210, 210);
+  padding: 10px 20px 15px 20px;
+
   grid-column: 2/3;
   grid-row: 2/3;
+
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 50px 1fr;
 }
 
 /* ////////Sidebar content////////// */
@@ -174,4 +180,97 @@ body {
   border: none;
   font-weight: bold;
   font-size: 20px;
+}
+
+/*////////Main Content Section/////////*/
+.mainHeading {
+  font-size: 23px;
+  font-weight: bold;
+  align-self: end;
+}
+
+.projectsGrid {
+  margin-right: 30px;
+  padding-top: 20px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border-left: 10px solid rgb(128, 212, 139);
+  padding: 30px 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardIcons {
+  align-self: end;
+  margin-top: 15px;
+}
+
+.cardIcons img {
+  margin-left: 10px;
+}
+
+/*Right had side of main section*/
+.rightMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px 1fr;
+}
+
+.announceCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 50px;
+  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.cardTextBtm {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.trendingHeading {
+  font-size: 23px;
+  align-self: end;
+  font-weight: bold;
+}
+
+.trendingCard {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 50px;
+}
+
+.trendingUser {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trendingUser div {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.trendingUser span {
+  font-size: 20px;
+  font-weight: 400;
 }
